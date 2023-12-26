@@ -1,0 +1,69 @@
+@charset "utf-8";
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  height: 100%;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+input,
+textarea,
+select {
+  resize: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  background: rgba(0, 0, 0, 0);
+  // iOS系统下input submit会有圆角，如果添加有背景色，背景色错误
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  // 消除浏览器输入框高亮背景色
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  // 消除浏览器输入框自动填充的背景色，颜色可根据背景设置
+  &:-webkit-autofill {
+    box-shadow: 0 0 0 1000px var(--color-background) inset !important;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 1000px var(--color-background) inset !important;
+  }
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  &-track-piece {
+    background: var(--color-background);
+    margin: 8px;
+    border-radius: 4px;
+  }
+  &-thumb {
+    background: var(--color-text);
+    border-radius: 4px;
+  }
+}

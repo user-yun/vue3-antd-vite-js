@@ -6,11 +6,10 @@
         algorithm: theme.darkAlgorithm
       }"
     >
-      <RouterView />
+      <router-view />
     </a-config-provider>
   </a-style-provider>
 </template>
 <script setup>
-import { RouterView } from 'vue-router'
 import { legacyLogicalPropertiesTransformer, theme } from 'ant-design-vue'
 </script>

@@ -26,6 +26,7 @@ export default defineConfig(({ command, mode }) => {
         '@': fileURLToPath(new URL('./src', import.meta.url)),
         '@a': fileURLToPath(new URL('./src/assets', import.meta.url)),
         '@c': fileURLToPath(new URL('./src/components', import.meta.url)),
+        '@l': fileURLToPath(new URL('./src/layout', import.meta.url)),
         '@r': fileURLToPath(new URL('./src/router', import.meta.url)),
         '@s': fileURLToPath(new URL('./src/stores', import.meta.url)),
         '@v': fileURLToPath(new URL('./src/views', import.meta.url))
