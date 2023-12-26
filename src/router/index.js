@@ -9,19 +9,19 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/aaa',
-      name: 'aaa',
+      path: '/',
+      redirect: '/aaa/home',
       component: layout,
       children: [
         {
           path: '/aaa/home',
-          name: 'aaahome',
+          redirect: '/aaa/aaa/home',
           component: RouteView,
           children: [
             {
-              path: '/aaa/aaa/about',
+              path: '/aaa/aaa/home',
               name: 'aaaaaahome',
-              component: () => import('@v/AboutView.vue')
+              component: () => import('@v/HomeView.vue')
             }
           ]
         }

@@ -1,19 +1,11 @@
 <template>
   <a-layout>
-    <a-layout-header>
-      <Header />
-    </a-layout-header>
+    <Sider />
     <a-layout>
-      <a-layout-sider>
-        <Sider />
-      </a-layout-sider>
-      <a-layout-content>
-        <Content />
-      </a-layout-content>
-    </a-layout>
-    <a-layout-footer>
+      <Header />
+      <Content />
       <Footer />
-    </a-layout-footer>
+    </a-layout>
   </a-layout>
 </template>
 <script setup>

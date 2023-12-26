@@ -45,11 +45,11 @@ select {
 
   // 消除浏览器输入框自动填充的背景色，颜色可根据背景设置
   &:-webkit-autofill {
-    box-shadow: 0 0 0 1000px var(--color-background) inset !important;
+    // box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0) inset !important;
   }
 
   &:focus {
-    box-shadow: 0 0 0 1000px var(--color-background) inset !important;
+    // box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0) inset !important;
   }
 }
 
@@ -58,12 +58,12 @@ select {
   width: 7px;
   height: 7px;
   &-track-piece {
-    background: var(--color-background);
+    // background: var(--color-background);
     margin: 8px;
     border-radius: 4px;
   }
   &-thumb {
-    background: var(--color-text);
+    // background: var(--color-text);
     border-radius: 4px;
   }
 }

@@ -3,9 +3,10 @@
   <a-style-provider hash-priority="high" :transformers="[legacyLogicalPropertiesTransformer]">
     <a-config-provider
       :theme="{
-        algorithm: theme.darkAlgorithm
+        algorithm: theme.defaultAlgorithm
       }"
     >
+      <!-- algorithm: theme.darkAlgorithm -->
       <router-view />
     </a-config-provider>
   </a-style-provider>
