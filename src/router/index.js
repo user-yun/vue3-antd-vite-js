@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { h, resolveComponent } from 'vue'
-import layout from '@l'
+import { h, resolveComponent, defineAsyncComponent } from 'vue'
 const RouteView = {
   name: 'RouteView',
   render: () => h(resolveComponent('router-view'))
 }
+const layout = defineAsyncComponent(() => import('@l'))
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
